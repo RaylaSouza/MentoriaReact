@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import Menu from '../Menu/Menu';
+import React, { useState } from 'react';
+import Menu from '../../components/Menu/Menu';
+import './Blocos.css';
 
 const Blocos = (props) => {
     const [blocos, setBlocos] = useState(false);
@@ -41,7 +42,7 @@ const Blocos = (props) => {
 
     const renderContador = () => {
         return <>
-            <div>
+            <div class="testeCss">
                 {contador}
             </div>
         </>  

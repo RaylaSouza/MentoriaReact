@@ -1,8 +1,8 @@
 
 import './App.css';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
-import Blocos from './components/Blocos/Blocos';
-import Linhas from './components/Linhas/Linhas';
+import Blocos from './pages/Blocos/Blocos';
+import Linhas from './pages/Linhas/Linhas';
 
 function App() {
   return (

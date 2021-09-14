@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import Menu from '../Menu/Menu';
+import { useStyles } from "./styles";
+import Menu from '../../components/Menu/Menu';
 
 const Linhas = () => {
+    const classes = useStyles();
     const [linhas, setLinhas] = useState(false);
 
     const renderLinhas = () => {
         return <>
-            <div>
+            <div className={classes.teste}>
                 -----
             </div>
             <div>
