@@ -7,7 +7,7 @@ const Menu = () => {
     const [value, setValue] = useState(0);
 
     useEffect(() => {
-     var url = window.location.href.split('3000');
+     var url = window.location.href.split('3001');
         if(url[1] === "/"){
             setValue(0);
         }

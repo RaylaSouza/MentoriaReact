@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Menu from '../../components/Menu/Menu';
+import Button from '@material-ui/core/Button';
 import './Blocos.css';
+import Botao from '../../components/Botao/Botao';
 
 const Blocos = (props) => {
     const [blocos, setBlocos] = useState(false);
@@ -26,17 +28,19 @@ const Blocos = (props) => {
 
     const renderBotoes = () => {
         return <>
+        <div class='flex'>
             <button
                 onClick={() => setBlocos(!blocos)}
             >
                 Blocos
             </button>
 
-            <button
-                onClick={() => setContador(contador+1)}
-            >
+            <Button variant="contained" color="secondary" onClick={() => setContador(contador+1)}>
                 Contador
-            </button>
+            </Button>
+            <Botao name="Marcos"/>
+            <Botao name="Rayla"/>
+        </div>
         </>
     }
 
